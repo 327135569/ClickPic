@@ -1,0 +1,1 @@
+Checks: '-*,clang-diagnostic-*,llvm-*,misc-*,-misc-unused-parameters,-misc-non-private-member-variables-in-classes,-llvm-qualified-auto'

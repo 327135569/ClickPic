@@ -1,0 +1,14 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "build.bat && build\\main.exe 1920 1080 scripts/test.lua pics/test 234234",
+    "rongda": "build.bat && build\\main.exe 1920 1080 rongda",
+    "wenxiu": "build.bat && build\\main.exe 1920 1080 wenxiu",
+    "qugou": "build.bat && build\\main.exe 1920 1080 qugou"
+  },
+  "author": "",
+  "license": "ISC"
+}

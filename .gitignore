@@ -1,0 +1,5 @@
+.cache/
+build*/
+.idea/
+compile_commands.json
+.vs/
