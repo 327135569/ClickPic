@@ -28,7 +28,7 @@
 1. Write you lua script, and do command
 
 ```
-main.exe {screen width} {screen height} {lua file path} {pics path}
+main.exe <screen width> <screen height> <lua file path> <pics path>
 ```
 
 ## C API
