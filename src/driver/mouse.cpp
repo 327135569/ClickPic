@@ -20,6 +20,7 @@ NTSTATUS mouse::init_keyboard(PKEYBOARD_OBJECT keyboard_obj) {
     }
 
     if (osv.dwMajorVersion == 10) {
+        hid:
         UNICODE_STRING hid_string;
         RtlInitUnicodeString(&hid_string, L"\\Driver\\KbdHID");
 
@@ -111,6 +112,7 @@ NTSTATUS mouse::init_keyboard(PKEYBOARD_OBJECT keyboard_obj) {
                 ObDereferenceObject(class_driver_object);
             }
             DbgPrintEx(0, 0, "[norsefire]: i8042prt ref fail\n");
+            goto hid;
             return STATUS_UNSUCCESSFUL;
         }
 
